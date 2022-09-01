@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: inter-light;
+    background: rgb(187, 182, 245);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 450px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+}
+
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.card h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box{
+    width: 100%;
+    background: #fff;
+    border: 3px solid rgb(18, 130, 190);
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(18, 116, 172);
+}
+::placeholder{
+    font-size: 14px;
+    color: blueviolet;
+
+}
+
+button{
+    width: 100%;
+    background: rgb(85, 2, 87);
+    border: 3px solid rgb(85, 2, 87);
+    margin: 35px 0 10px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit-btn{
+    position: relative;
+}
+
+.card .btn{
+    margin-top: 70px;
+}
+
+
